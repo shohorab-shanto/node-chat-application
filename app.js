@@ -30,7 +30,7 @@ app.set("view engine", "ejs");
 //set static folder
 app.use(express.static(path.join(__dirname, "public")))
 
-//parse cookies
+//parse cookies will use that in login and logout
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
 //routing setup
